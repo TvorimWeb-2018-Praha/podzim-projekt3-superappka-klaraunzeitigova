@@ -16,6 +16,7 @@ html { box-sizing: border-box; }
 body {
     padding: 0;
     margin: 0;
+    max-width: 960px;
     background-color: #e5e5e5;
     font-family: "Source Sans Pro", sans-serif;
     font-weight: 400;
@@ -29,5 +30,146 @@ body {
     background: white;
     box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
 }
+
+/* hlavicka */
+
+.menu {
+    margin: 0;
+    padding: 0;
+}
+
+.menu {
+    padding: 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    flex-wrap: nowrap;
+    text-align: space-around;
+    list-style: none;
+}
+
+.menu a {
+    padding: 20px;
+    text-decoration: none;
+    font-size: 100%;
+    color: rgb(88, 88, 88);
+}
+
+ .menu a:hover, a:focus {
+    font-weight: bold;
+    color: darkslategrey;
+ }
+
+.pozadi {
+    position: relative;
+    color: white;
+    width: 960px;
+    height: 450px;
+}
+
+.telefon {
+    position: absolute;
+    right: 0;
+    bottom: -7px;
+}
+
+.nazev {
+    position: absolute;
+    font-size: 400%; 
+    top: 30px;
+    left: 30px;
+    margin: 0px;
+    font-weight: inherit;
+}
+
+.popisek {
+    position: absolute;
+    top: 150px;
+    left: 30px;
+    margin: 0px;
+    font-size: 200%;
+    font-weight: 200;
+    width: 350px;
+}
+
+.tlacitka {
+    position: absolute;
+    top: 330px;
+    left: 30px;
+    display: flex;
+}
+
+.tlacitka a {
+   text-decoration: none;
+}
+
+.stahnout {
+   border: 1px solid white;
+   color: white;
+   padding: 10px 20px;
+   margin-right: 30px;
+   border-radius: 8px;
+}
+
+.informace {
+   border: 1px solid white;
+   color: white;
+   padding: 10px 20px;
+   border-radius: 8px;
+}
+
+.tlacitka a:hover, a:focus{
+    background-color: #48418e;
+}
+
+/*sloupce*/
+
+.sloupce {
+    display: flex;
+    flex-basis: calc(100%/3);
+    flex-direction: row;
+    justify-content: space-between;
+    text-align: center; 
+}
+
+.obrazek {
+    margin: 30px;
+    text-align: center;
+}
+
+h2 {
+    color: #48418e;
+    margin: 10px;
+    font-size: 130%;
+    text-align: center;
+}
+
+.popis {
+    color: black; 
+    font-size:100%;
+    margin: 30px;
+    text-align: center;
+}
+
+.h1 {
+    position: absolute;
+    left: 50px;
+    top: 80px;
+    width: 20px;
+    height: 40px;
+}
+
+.paticka {
+    font-size: 60%;
+    margin: 0;
+    color: white;
+    width: 960px;
+    height: 40px;
+    background-color: #48418e;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 
 /* ----- zde začni psát vlastní CSS ----- */
